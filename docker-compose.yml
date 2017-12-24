@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  builder:
+    build: ./alpine
+    image: khs1994/cxyl-news:builder
+
+  latest:
+    build: .
+    image: khs1994/cxyl-news:latest
